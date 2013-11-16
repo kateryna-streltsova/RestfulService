@@ -11,6 +11,6 @@ public class Service {
 	 @GET
 	  @Produces(MediaType.TEXT_PLAIN)
 	  public String sayPlainTextHello() {
-	    return "Hello Kate";
+	    return "Hello Kate!";
 	  }
 }
