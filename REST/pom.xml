@@ -34,25 +34,15 @@
           <target>1.7</target>
         </configuration>
       </plugin>
-      <plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-war-plugin</artifactId>
-			<configuration>
-				<webResources>
-					<resource>
-						<directory>${basedir}/src/main/java</directory>
-						<targetPath>WEB-INF/classes</targetPath>
-						<includes>
-							<include>**/*.properties</include>
-							<include>**/*.xml</include>
-							<include>**/*.css</include>
-							<include>**/*.html</include>
-						</includes>
-					</resource>
-				</webResources>
-			</configuration>
-		</plugin>
- 
+     
+ <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-war-plugin</artifactId>
+  <configuration>
+    <webXml>${basedir}/WebContent/WEB-INF/web.xml</webXml>
+    <warSourceDirectory>${basedir}/WebContent</warSourceDirectory>
+  </configuration>
+</plugin>
     </plugins>
   </build>
   <packaging>war</packaging>
