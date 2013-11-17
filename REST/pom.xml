@@ -33,16 +33,15 @@
           <source>1.7</source>
           <target>1.7</target>
         </configuration>
-      </plugin>
-     
- <plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-war-plugin</artifactId>
-  <configuration>
-    <webXml>${basedir}/WebContent/WEB-INF/web.xml</webXml>
-    <warSourceDirectory>${basedir}/WebContent</warSourceDirectory>
-  </configuration>
-</plugin>
+      </plugin>     
+	 <plugin>
+	  <groupId>org.apache.maven.plugins</groupId>
+	  <artifactId>maven-war-plugin</artifactId>
+	  <configuration>
+	    <webXml>${basedir}/WebContent/WEB-INF/web.xml</webXml>
+	    <warSourceDirectory>${basedir}/WebContent</warSourceDirectory>
+	  </configuration>
+	</plugin>
     </plugins>
   </build>
   <packaging>war</packaging>
